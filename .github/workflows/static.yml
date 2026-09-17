@@ -17,6 +17,8 @@ concurrency:
 
 jobs:
   deploy:
+    # Temporarily disabled; remove this guard to re-enable deployment.
+    if: ${{ false }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
