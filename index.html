@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Placeholder | Website Template</title>
+    <meta
+      name="description"
+      content="A reusable placeholder website template for a new project."
+    />
+    <link
+      rel="preload"
+      href="assets/video/placeholder.mp4"
+      as="video"
+      type="video/mp4"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#showcase">Skip to content</a>
+
+    <nav class="progress-sidebar" aria-label="Page progress">
+      <div class="progress-track">
+        <div class="progress-line" aria-hidden="true"></div>
+        <div class="progress-line-fill" aria-hidden="true"></div>
+        <div class="progress-item" data-section="top">
+          <a href="#top" data-nav="top">
+            <span class="progress-dot" aria-hidden="true"></span>
+            <span class="progress-label">Intro</span>
+          </a>
+        </div>
+        <div class="progress-item" data-section="showcase">
+          <a href="#showcase" data-nav="showcase">
+            <span class="progress-dot" aria-hidden="true"></span>
+            <span class="progress-label">Showcase</span>
+          </a>
+        </div>
+        <div class="progress-item" data-section="pipeline">
+          <a href="#pipeline" data-nav="pipeline">
+            <span class="progress-dot" aria-hidden="true"></span>
+            <span class="progress-label">Pipeline</span>
+          </a>
+        </div>
+        <div class="progress-item" data-section="results">
+          <a href="#results" data-nav="results">
+            <span class="progress-dot" aria-hidden="true"></span>
+            <span class="progress-label">Results</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section id="top" class="hero-flow" aria-labelledby="hero-title">
+        <div class="hero-orb" aria-hidden="true"></div>
+        <h1 id="hero-title" class="hero-text">Project Placeholder</h1>
+        <p class="sub-hero-text">Placeholder subtitle for a future project website template.</p>
+
+        <div class="hero-video-wrap">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            data-priority-video="intro"
+          >
+            <source src="assets/video/placeholder.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="authors">
+          <span>
+            Author Name, Collaborator Name, Researcher Name, Contributor Name, Project Lead Name,
+            Team Member Name, Advisor Name, Laboratory Name, Visiting Contributor Name,
+            Supporting Contributor Name
+          </span>
+          <span class="affiliation">Affiliation placeholder</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="cta primary" href="#showcase">Placeholder A</a>
+          <a class="cta dark" href="#results">Placeholder B</a>
+        </div>
+
+        <div class="hero-conference-badge">
+          <span class="interactive-badge interactive-badge--conference">Placeholder badge</span>
+        </div>
+
+        <div class="hero-waves" aria-hidden="true">
+          <svg
+            class="waves-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"
+              ></path>
+            </defs>
+            <g class="wave-parallax">
+              <use href="#gentle-wave" x="48" y="0" fill="rgba(212,148,10,0.25)"></use>
+              <use href="#gentle-wave" x="48" y="3" fill="rgba(147,51,234,0.2)"></use>
+              <use href="#gentle-wave" x="48" y="5" fill="rgba(59,130,246,0.18)"></use>
+              <use href="#gentle-wave" x="48" y="7" fill="rgba(37,99,235,0.25)"></use>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <div class="tagline">Interactive Showcase <span class="interactive-badge">Placeholder</span></div>
+      <section
+        id="showcase"
+        class="section section-card section-showcase"
+        aria-labelledby="showcase-title"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="showcase-title">Placeholder showcase</h2>
+          <p>
+            Placeholder text describes the project’s central idea. Replace this copy with a concise
+            introduction when the project content is ready.
+          </p>
+        </div>
+        <div class="showcase-grid">
+          <figure class="media-card" data-reveal>
+            <figcaption>Placeholder media A</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="media-card" data-reveal>
+            <figcaption>Placeholder media B</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <div class="tagline">Project Pipeline</div>
+      <section
+        id="pipeline"
+        class="section section-card section-pipeline"
+        aria-labelledby="pipeline-title"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="pipeline-title">Placeholder pipeline</h2>
+          <p>
+            Placeholder text introduces the sequence of steps, components, or experiments that will
+            eventually make up this section.
+          </p>
+        </div>
+        <div class="pipeline-grid">
+          <article class="pipeline-card" data-reveal>
+            <div class="pipeline-step">Step 1 — Placeholder</div>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder description for the first stage.</p>
+          </article>
+          <article class="pipeline-card" data-reveal>
+            <div class="pipeline-step">Step 2 — Placeholder</div>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder description for the second stage.</p>
+          </article>
+          <article class="pipeline-card" data-reveal>
+            <div class="pipeline-step">Step 3 — Placeholder</div>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder description for the third stage.</p>
+          </article>
+          <article class="pipeline-card" data-reveal>
+            <div class="pipeline-step">Step 4 — Placeholder</div>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder description for the fourth stage.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="tagline">Placeholder Results</div>
+      <section
+        id="results"
+        class="section section-card section-results"
+        aria-labelledby="results-title"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="results-title">Placeholder results</h2>
+          <p>
+            Placeholder text summarizes the outcomes that will be shown here. Add figures, metrics,
+            or comparison details as the project develops.
+          </p>
+        </div>
+        <div class="results-grid">
+          <article class="result-card" data-reveal>
+            <h3>Placeholder outcome A</h3>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder metric or supporting explanation.</p>
+          </article>
+          <article class="result-card" data-reveal>
+            <h3>Placeholder outcome B</h3>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+            <p>Placeholder metric or supporting explanation.</p>
+          </article>
+        </div>
+      </section>
+
+      <div class="tagline">References</div>
+      <footer class="site-footer">
+        <div class="bibtex-code">
+          <pre class="citation-block"><code>@article{placeholder,
+  title={Placeholder title},
+  author={Placeholder author},
+  year={20XX}
+}</code></pre>
+        </div>
+      </footer>
+    </main>
+
+    <div class="footer">Website template placeholder.</div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
