@@ -165,10 +165,11 @@
         aria-labelledby="challenges-title"
       >
         <div class="section-head" data-reveal>
-          <h2 id="challenges-title">Placeholder challenges</h2>
+          <h2 id="challenges-title">Immobilization of a Passive Rover</h2>
           <p>
-            Placeholder text describes the project’s central idea. Replace this copy with a concise
-            introduction when the project content is ready.
+            Future planetary missions target steeper and more deformable terrain.
+            However, on loose regolith, steep slopes amplify slip and sinkage.
+            A rover with a passive suspension can dig in and become stuck, as shown below.
           </p>
         </div>
         <div class="challenges-grid">
@@ -180,6 +181,67 @@
           </figure>
           <figure class="media-card" data-reveal>
             <figcaption>Placeholder media B</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        id="challenges-passive-rover-2"
+        class="section section-card section-challenges"
+        aria-labelledby="challenges-passive-rover-title-2"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="challenges-passive-rover-title-2">The ERNEST Rover</h2>
+          <p>
+            The ERNEST rover was designed to overcome extreme terrain challenges (see <a href="https://arxiv.org/abs/2606.06790" target="_blank" rel="noopener noreferrer">paper</a>).
+            It is a 75 kg rover with a two-degree-of-freedom Active Gimbal Suspension (AGS).
+            Coordinated control of the AGS allows the rover to redistribute load,
+            enabling crawling-like motions that can pull the rover through soft, steep terrain.
+          </p>
+        </div>
+        <div class="challenges-grid">
+          <figure class="media-card" data-reveal>
+            <figcaption>AGS Yaw</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="media-card" data-reveal>
+            <figcaption>AGS Yaw + Roll</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        id="challenges-passive-rover-3"
+        class="section section-card section-challenges"
+        aria-labelledby="challenges-passive-rover-title-3"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="challenges-passive-rover-title-3">Zero-Shot Deployment Failure</h2>
+          <p>
+            Coordination of the AGS can be trained with reinforcement learning (RL) in simulation.
+            The simulator models some terrain properties (e.g., slip and sinkage), but not all (e.g., soil deformation and rut formation).
+            This sim-to-real gap can result in zero-shot deployment failure.
+            Therefore, the rover needs to be able to adapt at the target site.
+            This adaptation must happen in real-time and be highly efficient, as the rover has limited energy to explore coordination strategies.
+          </p>
+        </div>
+        <div class="challenges-grid">
+          <figure class="media-card" data-reveal>
+            <figcaption>This policy successfully climbs in simulation</figcaption>
+            <video autoplay muted loop playsinline controls preload="metadata">
+              <source src="assets/video/placeholder.mp4" type="video/mp4" />
+            </video>
+          </figure>
+          <figure class="media-card" data-reveal>
+            <figcaption>The same policy fails to climb in the real world</figcaption>
             <video autoplay muted loop playsinline controls preload="metadata">
               <source src="assets/video/placeholder.mp4" type="video/mp4" />
             </video>
