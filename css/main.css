@@ -559,7 +559,7 @@ video {
   text-wrap: pretty;
 }
 
-.showcase-grid,
+.challenges-grid,
 .results-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -743,7 +743,7 @@ video {
     border-radius: 16px;
   }
 
-  .showcase-grid,
+  .challenges-grid,
   .results-grid,
   .pipeline-grid {
     grid-template-columns: 1fr;
