@@ -302,11 +302,12 @@ a {
 .hero-text {
   margin: 0 0 8px;
   color: var(--text-primary);
-  font-size: clamp(42px, 7.5vw, 80px);
+  font-size: clamp(24px, 3.8vw, 44px);
   font-weight: 500;
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.08;
   text-align: center;
+  text-wrap: balance;
 }
 
 .sub-hero-text {
@@ -704,7 +705,7 @@ video {
   }
 
   .hero-text {
-    font-size: 42px;
+    font-size: 28px;
   }
 
   .sub-hero-text {
@@ -753,7 +754,7 @@ video {
   }
 
   .hero-text {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   .sub-hero-text {
