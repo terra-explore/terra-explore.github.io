@@ -603,6 +603,15 @@ video {
   box-shadow: var(--shadow-sm);
 }
 
+.challenge-video {
+  width: calc((100% - 24px) / 2 - 42px);
+  aspect-ratio: 16 / 9;
+  margin: 18px auto;
+  border-radius: 16px;
+  object-fit: contain;
+  box-shadow: var(--shadow-sm);
+}
+
 .pipeline-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -758,6 +767,10 @@ video {
   .media-card,
   .result-card {
     padding: 18px;
+  }
+
+  .challenge-video {
+    width: calc(100% - 38px);
   }
 
   .site-footer {
