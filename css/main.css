@@ -293,7 +293,7 @@ a {
 .hero-text,
 .section-head h2,
 .tagline,
-.pipeline-step,
+.method-step,
 .media-card figcaption,
 .result-card h3 {
   font-family: var(--font-heading);
@@ -545,7 +545,7 @@ video {
 }
 
 .section-head p,
-.pipeline-card p,
+.method-card p,
 .result-card p {
   margin: 0;
   color: var(--text-secondary);
@@ -568,7 +568,7 @@ video {
 
 .media-card,
 .result-card,
-.pipeline-card {
+.method-card {
   min-width: 0;
   margin: 0;
   padding: 20px;
@@ -581,7 +581,7 @@ video {
 
 .media-card:hover,
 .result-card:hover,
-.pipeline-card:hover {
+.method-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
@@ -595,7 +595,7 @@ video {
 
 .media-card video,
 .result-card video,
-.pipeline-card video {
+.method-card video {
   aspect-ratio: 16 / 9;
   margin: 18px 0;
   border-radius: 16px;
@@ -612,18 +612,18 @@ video {
   box-shadow: var(--shadow-sm);
 }
 
-.pipeline-grid {
+.method-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
 
-.pipeline-card {
+.method-card {
   padding: 28px;
   border-radius: 24px;
 }
 
-.pipeline-step {
+.method-step {
   font-family: var(--font-code);
   margin-bottom: 8px;
   color: var(--honey-bronze);
@@ -632,7 +632,7 @@ video {
   letter-spacing: 0.05em;
 }
 
-.pipeline-card p,
+.method-card p,
 .result-card p {
   font-size: 14px;
   line-height: 1.6;
@@ -754,16 +754,16 @@ video {
 
   .challenges-grid,
   .results-grid,
-  .pipeline-grid {
+  .method-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .pipeline-grid {
+  .method-grid {
     gap: 24px;
   }
 
-  .pipeline-card,
+  .method-card,
   .media-card,
   .result-card {
     padding: 18px;
