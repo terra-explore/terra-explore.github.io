@@ -620,6 +620,10 @@ video {
   line-height: 1.6;
 }
 
+#results .result-card p {
+  text-align: justify;
+}
+
 .method-figure {
   margin: 0;
   overflow: hidden;

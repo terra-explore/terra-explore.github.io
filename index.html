@@ -273,33 +273,40 @@
         </figure>
       </section>
 
-      <div class="tagline">Placeholder Results</div>
+      <div class="tagline">Results</div>
       <section
         id="results"
         class="section section-card section-results"
         aria-labelledby="results-title"
       >
         <div class="section-head" data-reveal>
-          <h2 id="results-title">Placeholder results</h2>
+          <h2 id="results-title">Out-of-Distribution Pretraining Conditions</h2>
           <p>
-            Placeholder text summarizes the outcomes that will be shown here. Add figures, metrics,
-            or comparison details as the project develops.
+            TERRA adapts a simulation-pretrained world model to the target site.
+            To test TERRA, we pretrain in two out-of-distribution conditions, inducing a severe pretrain-to-deployment gap.
           </p>
         </div>
         <div class="results-grid">
           <article class="result-card" data-reveal>
-            <h3>Placeholder outcome A</h3>
+            <h3>No-Slope</h3>
             <video autoplay muted loop playsinline controls preload="metadata">
               <source src="assets/video/placeholder.mp4" type="video/mp4" />
             </video>
-            <p>Placeholder metric or supporting explanation.</p>
+            <p>
+              The rover only sees step and ripples obstacles during simulation pretraining.
+              At the deployment site, the rover must learn to climb a slope, an obstacle it has never seen before.
+            </p>
           </article>
           <article class="result-card" data-reveal>
-            <h3>Placeholder outcome B</h3>
+            <h3>Hard-Ground</h3>
             <video autoplay muted loop playsinline controls preload="metadata">
               <source src="assets/video/placeholder.mp4" type="video/mp4" />
             </video>
-            <p>Placeholder metric or supporting explanation.</p>
+            <p>
+              The rover is pretrained on slopes and ripples on hard ground, where it does not have to utilize the AGS.
+              At the deployment site, the rover must learn to use the AGS to climb a soft-ground slope,
+              which it has not experienced before.
+            </p>
           </article>
         </div>
       </section>
