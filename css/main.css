@@ -293,7 +293,6 @@ a {
 .hero-text,
 .section-head h2,
 .tagline,
-.method-step,
 .media-card figcaption,
 .result-card h3 {
   font-family: var(--font-heading);
@@ -545,7 +544,6 @@ video {
 }
 
 .section-head p,
-.method-card p,
 .result-card p {
   margin: 0;
   color: var(--text-secondary);
@@ -575,8 +573,7 @@ video {
 }
 
 .media-card,
-.result-card,
-.method-card {
+.result-card {
   min-width: 0;
   margin: 0;
   padding: 20px;
@@ -588,8 +585,7 @@ video {
 }
 
 .media-card:hover,
-.result-card:hover,
-.method-card:hover {
+.result-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
@@ -602,8 +598,7 @@ video {
 }
 
 .media-card video,
-.result-card video,
-.method-card video {
+.result-card video {
   aspect-ratio: 16 / 9;
   margin: 18px 0;
   border-radius: 16px;
@@ -620,30 +615,24 @@ video {
   box-shadow: var(--shadow-sm);
 }
 
-.method-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.method-card {
-  padding: 28px;
-  border-radius: 24px;
-}
-
-.method-step {
-  font-family: var(--font-code);
-  margin-bottom: 8px;
-  color: var(--honey-bronze);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-}
-
-.method-card p,
 .result-card p {
   font-size: 14px;
   line-height: 1.6;
+}
+
+.method-figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 0;
+  box-shadow: none;
+}
+
+.method-image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .site-footer {
@@ -761,17 +750,11 @@ video {
   }
 
   .challenges-grid,
-  .results-grid,
-  .method-grid {
+  .results-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
 
-  .method-grid {
-    gap: 24px;
-  }
-
-  .method-card,
   .media-card,
   .result-card {
     padding: 18px;
