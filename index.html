@@ -238,18 +238,31 @@
         </div>
       </section>
 
-      <div class="tagline">Project Method</div>
+      <div class="tagline">Method</div>
       <section
         id="method"
         class="section section-card section-method"
         aria-labelledby="method-title"
       >
         <div class="section-head" data-reveal>
-          <h2 id="method-title">Placeholder method</h2>
+          <h2 id="method-title">Targeted Exploration for Reward-Relevant Adaptation (TERRA)</h2>
           <p>
-            Placeholder text introduces the sequence of steps, components, or experiments that will
-            eventually make up this section.
+            We introduce TERRA, an online adaptation framework that efficiently
+            seeks deployment data exposing task-relevant model errors and corrects them.
+            TERRA builds on the <a href="https://sim-dist.github.io/" target="_blank">SimDist</a> paradigm, which distills a world model
+            from simulation and adapts it to the target domain.
+            </br></br>
+            TERRA's main features are:
           </p>
+          <ul class="method-features">
+            <li><strong>Online adaptation.</strong>
+              TERRA inserts LoRA layers into the world model and updates them in real-time.</li>
+            <li><strong>Performance-aware prediction loss.</strong>
+              TERRA automatically weights prediction dimensions based on their impact on task performance.</li>
+            <li><strong>Targeted Exploration.</strong>
+              TERRA adapts a loss predictor at the same time as the world model.
+              TERRA uses the loss predictor to explore the part of the state space that is most likely to impact task performance.</li>
+          </ul>
         </div>
         <div class="method-grid">
           <article class="method-card" data-reveal>

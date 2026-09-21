@@ -559,6 +559,14 @@ video {
   text-wrap: pretty;
 }
 
+.section-head .method-features {
+  justify-self: stretch;
+  width: 100%;
+  margin: 0;
+  padding-left: 1.5rem;
+  text-align: justify;
+}
+
 .challenges-grid,
 .results-grid {
   display: grid;
