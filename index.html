@@ -42,6 +42,12 @@
             <span class="progress-label">Method</span>
           </a>
         </div>
+        <div class="progress-item" data-section="experiment-setup">
+          <a href="#experiment-setup" data-nav="experiment-setup">
+            <span class="progress-dot" aria-hidden="true"></span>
+            <span class="progress-label">Experiment Setup</span>
+          </a>
+        </div>
         <div class="progress-item" data-section="results">
           <a href="#results" data-nav="results">
             <span class="progress-dot" aria-hidden="true"></span>
@@ -273,14 +279,14 @@
         </figure>
       </section>
 
-      <div class="tagline">Results</div>
+      <div class="tagline">Experiment Setup</div>
       <section
-        id="results"
-        class="section section-card section-results"
-        aria-labelledby="results-title"
+        id="experiment-setup"
+        class="section section-card section-experiment-setup"
+        aria-labelledby="experiment-setup-title"
       >
         <div class="section-head" data-reveal>
-          <h2 id="results-title">Out-of-Distribution Pretraining Conditions</h2>
+          <h2 id="experiment-setup-title">Out-of-Distribution Pretraining Conditions</h2>
           <p>
             TERRA adapts a simulation-pretrained world model to the target site.
             To test TERRA, we pretrain in two out-of-distribution conditions, inducing a severe pretrain-to-deployment gap.
@@ -308,6 +314,18 @@
               which it has not experienced before.
             </p>
           </article>
+        </div>
+      </section>
+
+      <div class="tagline">Results</div>
+      <section
+        id="results"
+        class="section section-card section-results"
+        aria-labelledby="results-title"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="results-title">Results</h2>
+          <p>Results from the TERRA adaptation experiments will be shown here.</p>
         </div>
       </section>
 
