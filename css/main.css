@@ -52,6 +52,11 @@ body {
 
 a {
   color: inherit;
+  transition: color 0.2s ease;
+}
+
+a:hover:not(.cta) {
+  color: var(--honey-bronze);
 }
 
 button,
@@ -168,6 +173,10 @@ a {
   max-width: 320px;
   color: var(--honey-bronze);
   opacity: 1;
+}
+
+.progress-item a:hover .progress-label {
+  color: var(--honey-bronze);
 }
 
 @media (hover: hover) {
@@ -357,11 +366,6 @@ video {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.14em;
-  transition: color 0.2s ease;
-}
-
-.authors a:hover {
-  color: var(--honey-bronze);
 }
 
 .authors .affiliation {
@@ -416,6 +420,12 @@ video {
   border-color: var(--honey-bronze);
   color: #000;
   background: var(--honey-bronze);
+}
+
+.cta.primary:hover {
+  border-color: #e2a51d;
+  color: #000;
+  background: #e2a51d;
 }
 
 .cta.dark {
