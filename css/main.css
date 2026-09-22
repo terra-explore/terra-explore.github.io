@@ -689,6 +689,19 @@ video {
   text-align: left;
 }
 
+.acknowledgement {
+  max-width: 980px;
+  margin: 0 auto 24px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.acknowledgement p {
+  margin: 0;
+}
+
 .footer {
   margin-top: 36px;
   padding-top: 40px;
