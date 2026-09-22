@@ -324,9 +324,54 @@
         aria-labelledby="results-title"
       >
         <div class="section-head" data-reveal>
-          <h2 id="results-title">Results</h2>
-          <p>Results from the TERRA adaptation experiments will be shown here.</p>
+          <h2 id="results-title">No-Slope</h2>
+          <p>
+            The rover has never encountered a slope obstacle during its simulation pretraining.
+            With TERRA's targeted exploration, the rover sucessfully learns to climb the slope after 5 trials.
+          </p>
         </div>
+        <video class="results-video" autoplay muted loop playsinline controls preload="metadata" data-reveal>
+          <source src="assets/video/placeholder.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section
+        id="results-2"
+        class="section section-card section-results"
+        aria-labelledby="results-title-2"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="results-title-2">Hard-Ground</h2>
+          <p>
+            Because the rover was pretrained on hard ground, it initially attempts to climb the deformable slope
+            with forward motion alone.
+            When this fails, TERRA automatically kicks in, exploring with the AGS.
+            After only 3 trials, the rover learns to use the AGS to climb the slope.
+          </p>
+        </div>
+        <video class="results-video" autoplay muted loop playsinline controls preload="metadata" data-reveal>
+          <source src="assets/video/placeholder.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section
+        id="results-3"
+        class="section section-card section-results"
+        aria-labelledby="results-title-3"
+      >
+        <div class="section-head" data-reveal>
+          <h2 id="results-title-3">Results in Simulation</h2>
+          <p>
+            We compare TERRA with other exploration strategies in simulation, using the same two out-of-distribution pretraining conditions.
+            TERRA achieves better or similar performance while using the least amount of energy.
+          </p>
+        </div>
+        <img
+          class="results-image"
+          src="assets/video/images/sim_results.png"
+          alt="Simulation results comparing TERRA with baseline methods across success rate, task reward, completion time, and energy spent."
+          data-reveal
+        />
       </section>
 
       <div class="tagline">References</div>
