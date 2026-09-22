@@ -310,7 +310,7 @@ a {
 .hero-text {
   margin: 0 0 8px;
   color: var(--text-primary);
-  font-size: clamp(24px, 3.8vw, 44px);
+  font-size: clamp(24px, 3.8vw, 36px);
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1.08;
